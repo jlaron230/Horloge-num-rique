@@ -1,0 +1,131 @@
+
+/*Styles générique*/
+body {
+    font-family: 'Dancing Script', cursive;    background-color: rgb(1, 1, 48);
+    color: rgb(215, 249, 215);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 5%;
+}
+
+/*Styles Conteneur*/
+#X {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.time-cont {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    height: 35vh;    
+}
+
+.time-numb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    background-color: rgb(0, 195, 182);
+    border-radius: 8px 8px 0px 0px;
+    /* width: 100%; */
+    height: 60%;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.time-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 191, 0);
+    color: #000000;
+    border-radius: 0px 0px 8px 8px;
+    /* width: 100%; */
+    height: 30%;
+    font-size: 1.75em;
+    text-shadow: 1px 1px 2px #f7f7f7;
+
+}
+
+#U {
+    display: flex;
+    align-items: flex-end;
+}
+
+.D {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: red;
+    border-radius: 4px;
+    width: 7.5vw;
+    height: 7.5vh;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Media queries */
+@media screen  and (max-width: 768px){
+    body {
+        font-size: 0.8em;
+    }
+
+    #time {
+        display: block;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .time-cont {
+        width: auto;
+    }
+
+    .time-numb {
+        min-width: 145px;
+    }
+
+    .time-txt {
+        min-width: 145px;
+    }
+}
+
+@media screen  and (min-width: 768px){
+    body {
+        font-size: 1em;
+    }
+
+    #time {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .time-cont {
+        width: 20vw;
+    }
+
+    .time-numb {
+        width: 100%;
+    }
+
+    .time-txt {
+        width: 100%;
+    }
+}

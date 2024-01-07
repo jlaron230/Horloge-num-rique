@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Appel du Javascript-->
+    <script src="app.js"></script>
+    <!--Appel du style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!--Titre-->
+    <title>Horloge numérique</title>
+</head>
+<body onload="showHours(), showMins(), showSeconds(), showDays()" onunload="stopClock()">
+    <main class="container">
+  <h1>DIGITAL CLOCK</h1>
+
+    <!--Jour + matin où aprés-midi-->
+    <section id="X">
+        <p>
+            Hello Man, bon
+            <span id="J"></span>
+            et
+            <span id="P"></span>
+            !
+        </p>
+    </section>
+    
+    <div id="time">
+
+        <!--Heures-->
+        <section class="time-cont">
+            <span class="time-numb" id="H"></span>
+            <span class="time-txt">Heures</span>
+        </section>
+
+        <!--Minutes-->
+        <section class="time-cont">
+            <span class="time-numb" id="M"></span>
+            <span class="time-txt">Minutes</span>
+        </section>
+
+        <!--Secondes-->
+        <section class="time-cont">
+            <span class="time-numb" id="S"></span>
+            <span class="time-txt">Secondes</span>
+        </section>
+        
+        <!--Matin où aprés-midi-->
+        <section id="U">
+            <p class="D" id="Temps"></p>
+        </section>
+
+    </div>
+    </main>
+</body>
+</html>
