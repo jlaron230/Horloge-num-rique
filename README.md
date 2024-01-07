@@ -2,3 +2,4 @@ Création d'une horloge numérique en équipe de deux, dans le but de produire u
 À l'heure réelle, lorsque l'utilisateur quitte la page. La page est responsive et s'adapte sûre (Desktop, tablette et mobile). 
 
 Exercice réalisé à deux personnes, dans le cadre d'un mini projet de formation.
+Utilisation de VS Code comme IDE, et des langages (html, css et javascript).
